@@ -1,35 +1,5 @@
-// "use strict";
-// // document.querySelector(".message").textContent = "🎉Correct Number!!";
-// // document.querySelector(".number").textContent = 13;
-// // document.querySelector(".score").textContent = 2;
-// const random = Math.trunc(Math.random() * 20) + 1;
-// document.querySelector(".number").textContent = random;
-// let score = 20;
-// let highscore = 0;
-// // console.log(document.querySelector(".guess").value);
-// // document.querySelector(".guess").value = 12;
-// document.querySelector(".check").addEventListener("click", function () {
-//   document.querySelector(".score").textContent = score;
-
-//   const val = Number(document.querySelector(".guess").value);
-//   if (!val) {
-//     document.querySelector(".message").textContent = "enter crct number";
-//   } else {
-//     if (val === random) {
-//       document.querySelector(".message").textContent = "🎉Correct Number!!!";
-//     } else if (val > random) {
-//       document.querySelector(".message").textContent = "too high";
-//       score--;
-//     } else if (val < random) {
-//       document.querySelector(".message").textContent = "too low!";
-//       score--;
-//     }
-//   }
-// });
-// console.log(document.querySelector(".message").textContent);
-// document.querySelector(".guess").value = 12;
 "use strict";
-let secretNumber = Math.trunc(Math.random() * 20) + 1;
+let secretNumber = Math.trunc(Math.random() * 30) + 1;
 let score = 20;
 let highScore = 0;
 
@@ -66,7 +36,7 @@ document.querySelector(".check").addEventListener("click", function () {
 });
 document.querySelector(".again").addEventListener("click", function () {
   score = 20;
-  secretNumber = Number(Math.trunc(Math.random() * 20) + 1);
+  secretNumber = Number(Math.trunc(Math.random() * 30) + 1);
   document.querySelector(".score").textContent = score;
   document.querySelector("body").style.backgroundColor = "black";
   document.querySelector(".number").style.width = "7rem";
